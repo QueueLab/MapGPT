@@ -8,12 +8,13 @@ import { Button } from './ui/button'
 import { Card } from './ui/card'
 import { ArrowRight, Check, FastForward, Sparkles } from 'lucide-react'
 import { useActions, useStreamableValue, useUIState } from 'ai/rsc'
-import type { AI } from '@/app/actions'
+import type { AI, StreamableValue } from '@/app/actions'
 import { IconLogo } from './ui/icons'
 import { cn } from '@/lib/utils'
+import appState from '../lib/utils/app-state'
 
 export type CopilotProps = {
-  inquiry?: PartialInquiry
+  inquiry?: StreamableValue<PartialInquiry>
 }
 
 export const Copilot: React.FC<CopilotProps> = ({ inquiry }: CopilotProps) => {

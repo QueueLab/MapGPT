@@ -34,7 +34,4 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
-MapGPT/.env
-.env
-
-.vscode/extensions.json
+public/images/env/
